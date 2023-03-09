@@ -1,0 +1,111 @@
+body {
+  background-color: $yellow;
+}
+.containermain {
+  position: relative;
+  top: 60px;
+  display: grid;
+  grid-template-rows: (45vh, 10vh, 45vh);
+}
+.containerimg {
+  grid-row: 1/2;
+}
+.containerimg img {
+  width: 200px;
+  height: 180px;
+  padding: 10px;
+  transition: 0.5s;
+}
+.containerimg img:hover {
+  transform: scale(1.1);
+}
+.videobox {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  padding: 100px;
+
+  overflow: hidden;
+  background: $black;
+  grid-row: 3/4;
+}
+
+.videos {
+  width: 20%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: bisque;
+}
+
+.videos video {
+  width: 95%;
+  height: 100px;
+  margin: 5px;
+  object-fit: cover;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.videos video:nth-child(1) {
+  margin-top: 0;
+}
+
+.videos video:hover,
+.videos .active {
+  transform: scale(1.06);
+  border: 3px solid $purpel;
+}
+
+.videos .main-video {
+  width: 80%;
+  padding: 10px;
+}
+
+.videobox .main-video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 3px solid $purpel;
+}
+@media only screen and (max-width: 600px) {
+  .containerimg {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .containerimg img {
+    width: 25%;
+    height: 25%;
+  }
+
+  .videobox {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    display: grid;
+    grid-template-rows: (25%, 50%);
+    padding: 0;
+  }
+  .videos {
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    grid-row: 1/2;
+  }
+  .videobox .main-video {
+    width: 100%;
+    grid-row: 2/3;
+  }
+  .videos video {
+    width: 20%;
+    height: 100%;
+    margin: 0;
+    justify-items: flex-start;
+  }
+}

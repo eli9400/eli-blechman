@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mardi Gras</title>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Henny+Penny&family=Orbitron&family=Source+Code+Pro:ital,wght@0,200;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Henny+Penny&family=Orbitron&family=Pattaya&family=Source+Code+Pro:ital,wght@0,200;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  </head>
+
+  <body>
+    <header>
+      <div class="topnav" id="myTopnav">
+        <a href="main.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="media.html">Media</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"
+          >&#9776;</a
+        >
+      </div>
+    </header>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    <main>
+      <img class="responsivimg" src="./images/karnaval.pweb.jpg" alt="" />
+
+      <div class="slidbox">
+        <div class="slide fade">
+          <div class="numpic">1 / 5</div>
+          <img src="woman.webp" alt="" style="width: 100vw" />
+          <div class="text">
+            <p>Street display of masks for tourists who come</p>
+          </div>
+        </div>
+        <div class="slide fade">
+          <div class="numpic">2 / 5</div>
+          <img src="track.webp" alt="" style="width: 100vw" />
+          <div class="text">
+            <p>Sparkling streetcar</p>
+          </div>
+        </div>
+        <div class="slide fade">
+          <div class="numpic">3 / 5</div>
+          <img src="street.webp" alt="" style="width: 100vw" />
+          <div class="text">
+            <p>People celebrate the festival</p>
+          </div>
+        </div>
+        <div class="slide fade">
+          <div class="numpic">4 / 5</div>
+          <img src="costum.webp" alt="mask" style="width: 100vw" />
+          <div class="text">
+            <p>A woman dressed in purple and gold stands next to the flowers</p>
+          </div>
+        </div>
+        <div class="slide fade">
+          <div class="numpic">5 / 5</div>
+          <img src="wall.webp" alt="wall" style="width: 100vw" />
+          <div class="text">
+            <p>A wall decorated in heat and green</p>
+          </div>
+        </div>
+      </div>
+      <br />
+      <article>
+        <section>
+          <h1>Details about the carnival</h1>
+          <p>
+            Epiphany, January 6, is the official end of the Christmas season,
+            but it also kicks off Carnival season in New Orleans. Although some
+            people use Carnival and Mardi Gras interchangeably, they are
+            actually different things. Carnival is a time to eat, drink and be
+            merry before the rigorous fasting and sacrifice during Lent. It is
+            filled with parades, balls and other celebrations leading up to
+            Mardi Gras, which is French for “Fat Tuesday.” Mardi Gras is always
+            the Tuesday before Ash Wednesday. Carnival officially ends at
+            midnight on Fat Tuesday and Lent begins.
+          </p>
+        </section>
+        <h1>
+          Businesses and suppliers who participate in the event and provide
+          service
+        </h1>
+      </article>
+
+      <div class="suplais">
+        <div class="openbox" onclick="openbox(1)">
+          <img src="bidtrobar.jpg" alt="bistro" />
+          <h2>Walk-On's Sports Bistreaux</h2>
+          <p>
+            Join the Walk-On’s Loyalty program and earn rewards while you eat
+            your favorites...
+          </p>
+        </div>
+        <div class="modal-content">
+          <div id="biz">
+            <div class="biz-header">
+              <h1 style="text-align: center">
+                GAME DAY WITH A TASTE OF LOUISIANA<span
+                  class="close"
+                  onclick="closebox(1)"
+                  >&times;</span
+                >
+              </h1>
+
+              <img src="bidtrobar.jpg" alt="restaran img" />
+            </div>
+            <div class="biz-body">
+              <p>
+                There’s really no better way to describe the uniqueness of
+                Walk-On’s Sports Bistreaux. We start every dish from scratch and
+                use fresh ingredients to bring our mouthwatering, Cajun cuisine
+                to life in every restaurant. Whether you’re here for dinner with
+                the family, date night, cocktails with the girls, or to watch a
+                game on the big screen, we’re always happy to share our
+                Louisiana culture with you
+              </p>
+            </div>
+
+            <div class="biz-futer">
+              <button style="background-color: bisque; border-radius: 20px">
+                <a
+                  href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwiZkLnX6IX9AhUH-VEKHdqDB-QYABAAGgJ3cw&ohost=www.google.com&cid=CAESauD2lOtgbWOYco_togOuFRlPv69joDU7f4DFRhS02pptaZUJfHbpjhY_yY3sc7ex_QPkWImAgd_078-k-zU6bT7lkQo1yILMFxO-vQyUtbpt5NnXu7ApK-e9apkHhNOL2LJgVe9UOc9IfuA&sig=AOD64_1LVxh68y0R3jEdBJHMpne9Hd9qMA&adurl=&q="
+                  >visit us</a
+                >
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="openbox" onclick="openbox(2)">
+          <img src="Sheraton-Hotel.jpg" alt="bistro" />
+          <h2>Sheraton New Orleans Hotel</h2>
+          <p>
+            Brimming with style and grounded in our community, Sheraton New
+            Orleans Hotel is the perfect home base for your downtown escape.
+          </p>
+        </div>
+        <div class="modal-content">
+          <div id="biz1" style="display: none">
+            <div class="biz-header">
+              <h1 style="text-align: center">
+                Sheraton New Orleans Hotel<span
+                  class="close"
+                  onclick="closebox(2)"
+                  >&times;</span
+                >
+              </h1>
+
+              <img src="Sheraton-Hotel.jpg" alt="hotel" />
+            </div>
+
+            <div class="biz-body">
+              <h2>About Sheraton New Orleans</h2>
+              <p>
+                Everything you need for a relaxing vacation, a successful
+                meeting, a memorable event...it's all waiting for you at the
+                Sheraton New Orleans Hotel. Just steps from the French Quarter,
+                the Sheraton New Orleans Hotel provides easy access to
+                world-class dining, live music, great shopping and more. Our
+                1,110 non-smoking guest rooms, including 53 suites, reflect New
+                Orleans charm and many have views of the Mississippi River or
+                French Quarter. The warm décor is anchored by the supremely
+                comfortable Sheraton Sweet Sleeper™ Bed and accented in inviting
+                hues. Sample regional cuisine at Roux Bistro or enjoy a cocktail
+                at the enchanting Pelican Bar. Then stop by our state-of-the-art
+                fitness center or outdoor pool. We also offer a business center
+                and 105,700 sq ft, a total of 53 rooms, of flexible meeting
+                space.
+              </p>
+            </div>
+
+            <div class="biz-futer">
+              <button style="background-color: bisque; border-radius: 20px">
+                <a
+                  href="https://www.online-reservations.com/?hotelid=59091&gclid=CjwKCAiAuaKfBhBtEiwAht6H7wSuCZGCCJWhi-bCSwvYLrYk-pT9EDyrJaS61ObMvvOUJmCe7s3W2xoC0NEQAvD_BwE"
+                  >to order room</a
+                >
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="openbox" onclick="openbox(3)">
+          <img src="ace-hotel1.jpg" alt="hotel" />
+          <h2>Sheraton New Orleans Hotel</h2>
+          <p>
+            Brimming with style and grounded in our community, Sheraton New
+            Orleans Hotel is the perfect home base for your downtown escape.
+          </p>
+        </div>
+        <div class="modal-content">
+          <div id="biz2" style="display: none">
+            <div class="biz-header">
+              <h1 style="text-align: center">
+                Ace Hotel New Orleans<span class="close" onclick="closebox(3)"
+                  >&times;</span
+                >
+              </h1>
+
+              <img src="ace-hotel2.jpg" alt="hotel" />
+            </div>
+            <div class="biz-body">
+              <h2>Carnival Catch</h2>
+              <p>
+                Carnival season’s in reach and we’re saving rooms with a festive
+                rate. Enjoy what New Orleanians call the “Greatest Free Show on
+                Earth!” One Block from Mardi Gras grandstands, Ace Hotel New
+                Orleans is ideally located with a short walk to view many
+                parades. The first parade rolls out on Three Kings Day; January
+                6, 2023. You can view the full schedule & parade routes here.
+                See our details for our favorite parades & savings
+              </p>
+            </div>
+
+            <div class="biz-futer">
+              <button style="background-color: bisque; border-radius: 20px">
+                <a
+                  href="https://acehotel.com/new-orleans/?gclid=CjwKCAiAuaKfBhBtEiwAht6H7xhM01E5ZDh3hhwEcWTskiFbfbNvDey895Hqag-89yvbJVF-hBk1CRoCFWkQAvD_BwE"
+                  >to order room</a
+                >
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="openbox" onclick="openbox(4)">
+          <img src="carlton-hotel1.jpg" alt="hotel" />
+          <h2>NEW ORLEANS, LOUISIANA</h2>
+          <p>
+            WITHIN A HISTORIC BEAUX ARTS BUILDING IN NEW ORLEANS’ FRENCH
+            QUARTER, A HOTEL OFFERS LUXURY WITH A LOCAL TOUCH.
+          </p>
+        </div>
+        <div class="modal-content">
+          <div id="biz3" style="display: none">
+            <div class="biz-header">
+              <h1 style="text-align: center">
+                Ace Hotel New Orleans<span class="close" onclick="closebox(4)"
+                  >&times;</span
+                >
+              </h1>
+
+              <img src="carlton-hotel2.jpg" alt="hotel" />
+            </div>
+            <div class="biz-body">
+              <h2>Rich in history and personality</h2>
+              <p>
+                New Orleans is unlike any other US city. Honoring its spirit and
+                elegance, The Ritz-Carlton, New Orleans invites visitors to its
+                French Quarter retreat, set within a 1908 Beaux Arts building.
+                Here, one can bask in the silence of the hotel’s beautiful
+                courtyard, experience the mysticism of the city through the
+                spa’s Voodoo Ritual or learn how to play the trumpet with
+                in-house jazz musician Jeremy Davenport.
+              </p>
+            </div>
+
+            <div class="biz-futer">
+              <button style="background-color: bisque; border-radius: 20px">
+                <a
+                  href="https://www.ritzcarlton.com/en/hotels/new-orleans#HOTEL"
+                  >to order room</a
+                >
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="openbox" onclick="openbox(5)">
+          <img src="parking.jpg" alt="hotel" />
+          <h2>The leader in gateless digital parking.</h2>
+          <p>
+            We live at the intersection of parking and technology. We are a
+            technology company, a parking operator, and network of parking
+            advisors to bring it all together.
+          </p>
+        </div>
+        <div class="modal-content">
+          <div id="biz4" style="display: none">
+            <div class="biz-header">
+              <h1 style="text-align: center">
+                The leader in gateless digital parking.<span
+                  class="close"
+                  onclick="closebox(5)"
+                  >&times;</span
+                >
+              </h1>
+
+              <img src="parking.jpg" alt="hotel" />
+            </div>
+            <div class="biz-body">
+              <h2>The leader in gateless digital parking.</h2>
+
+              <p>
+                We live at the intersection of parking and technology. We are a
+                technology company, a parking operator, and network of parking
+                advisors to bring it all together. We built our own custom
+                cloud-based parking management software to run our locations—now
+                you can use it to upgrade yours. We offer an enterprise-class
+                agile solution that's simpler, more powerful and more affordable
+                than the disconnected hardware and app-based offerings of the
+                legacy parking industry giants and venture capital dorm room
+                startups.
+              </p>
+            </div>
+
+            <div class="biz-futer">
+              <button style="background-color: bisque; border-radius: 20px">
+                <a href="https://www.premiumparking.com/">Find Parking</a>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="openbox" onclick="openbox(7)">
+          <img src="Museum4.jpg" alt="muzeom" />
+          <h2>Museum of Death</h2>
+          <p>
+            Not-For-Profit organization that believes children matter and our
+            communities are better when kids know their immense potential.
+          </p>
+        </div>
+        <div class="modal-content">
+          <div id="biz6" style="display: none">
+            <div class="biz-header">
+              <h1 style="text-align: center">
+                Museum of Death New Orleans<span
+                  class="close"
+                  onclick="closebox(7)"
+                  >&times;</span
+                >
+              </h1>
+
+              <img src="Museum3.jpg" alt="hotel" />
+            </div>
+            <div class="biz-body">
+              <p></p>
+              <h2>What happened to the Museum of Death?</h2>
+
+              <p>
+                in 2000, proprietors James Healy and Cathee Shultz moved the
+                museum to its current location in Los Angeles, and expanded to
+                what is now the largest collection of serial murderer artwork,
+                photos of the Manson crime scenes, original photos from the
+                Dahlia Murders, and other such relics of the violent, fatal and
+                macabre.
+              </p>
+            </div>
+
+            <div class="biz-futer">
+              <button style="background-color: bisque; border-radius: 20px">
+                <a href="http://www.museumofdeath.net/">visit as</a>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="openbox" onclick="openbox(6)">
+          <img src="mozeon1.jpg" alt="muzeom" />
+          <h2>Louisiana Children’s Museum</h2>
+          <p>
+            Not-For-Profit organization that believes children matter and our
+            communities are better when kids know their immense potential.
+          </p>
+        </div>
+        <div class="modal-content">
+          <div id="biz5" style="display: none">
+            <div class="biz-header">
+              <h1 style="text-align: center">
+                mardi gras hower<span class="close" onclick="closebox(6)"
+                  >&times;</span
+                >
+              </h1>
+
+              <img src="mozeon2.jpg" alt="hotel" />
+            </div>
+            <div class="biz-body">
+              <p></p>
+              <h2>EDUCATIONAL PROGRAMS AT LCM</h2>
+
+              <p>
+                All programming is complimentary for LCM Members and included in
+                general admission unless otherwise noted. Advance timed-entry
+                tickets are required for all guests, LCM Members and non
+                members. Please reserve your advance timed-entry tickets on our
+              </p>
+            </div>
+
+            <div class="biz-futer">
+              <button style="background-color: bisque; border-radius: 20px">
+                <a href="https://lcm.org/">visit as</a>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="openbox" onclick="openbox(8)">
+          <img src="Haunted.jpg" alt="muzeom" />
+          <h2>Zak Bagans' The Haunted Museum</h2>
+          <p>
+            Not-For-Profit organization that believes children matter and our
+            communities are better when kids know their immense potential.
+          </p>
+        </div>
+        <div class="modal-content">
+          <div id="biz7" style="display: none">
+            <div class="biz-header">
+              <h1 style="text-align: center">
+                Zak Bagans<span class="close" onclick="closebox(8)"
+                  >&times;</span
+                >
+              </h1>
+
+              <img src="Haunted2.jpg" alt="hotel" />
+            </div>
+            <div class="biz-body">
+              <p></p>
+              <h2>About Zak Bagan's The Haunted Museum</h2>
+
+              <p>
+                Zak Bagans developed a profound interest in the paranormal when
+                he was just 10 years old, scouring nearby garage sales with his
+                mom in search of odd and spooky collectibles. His fascination
+                with the unusual evolved into a life-long pursuit for answers
+                about the afterlife, not merely through the study of earth-bound
+                energy, but also through years of science-based research using a
+                multitude of specially engineered equipment to measure
+                fluctuations in the environment… more specifically, to
+                communicate with the dead. Now a pioneer in the paranormal
+                field, Bagans is giving everyone a chance to experience the
+                spine-chilling vibe of the spirit world at the new Zak Bagans’
+                The Haunted Museum located in downtown Las Vegas.
+              </p>
+            </div>
+
+            <div class="biz-futer">
+              <button style="background-color: bisque; border-radius: 20px">
+                <a href="https://thehauntedmuseum.com/">visit as</a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="details">
+        <div class="box1">
+          <h3>lundi gras</h3>
+          On the day before Mardi Gras beginning in 1874, Rex, the King of
+          Carnival, would arrive by boat at the riverfront and with great pomp.
+          The King and his royal court would travel from the river to City Hall
+          in grand carriages where the mayor and various city officials would
+          present Rex with the keys to the city and grant him temporary rule of
+          the city beginning at sunrise on Mardi Gras morning.
+          <div>
+            <img src="mardi1.webp" alt="karnaval" style="width: 50vw" />
+          </div>
+          <p>
+            Although the Rex landing became a treasured tradition unique to New
+            Orleans, it fell by the wayside after World War I. In 1987,
+            Riverwalk Festival Marketplace (The Outlet Collection at Riverwalk)
+            brought the festival back to life and called it Lundi Gras or Fat
+            Monday. Today Lundi Gras is a series of Shrove Monday events at
+            Woldenberg Park. These days, Rex is joined by the King of the Zulu
+            and the Mayor of New Orleans turns over symbolic control to the two
+            Carnival monarchs.
+          </p>
+        </div>
+        <div class="box2">
+          <div><img src="mardi2.webp" alt="ma" style="width: 50vw" /></div>
+          <p>
+            The Modern Lundi Gras festival is a wonderful party with food, drink
+            and music on three stages. Past entertainers have include the
+            Rebirth Brass Band, Zulu Ensemble, Dwayne Dopsie & the Zydeco
+            Hellraisiers, and Amanda Shaw. A highlight of the event is the
+            presence of Zulu characters like Big Shot, the Witch Doctor and Mr.
+            Big Stuff. Come get your selfies and have a great time.
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <div class="point">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
+    </div>
+    <footer>
+      <div class="footer">
+        <p>Copyright © 2023</p>
+        <p>Built by a severely disabled student</p>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>media</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Henny+Penny&family=Pattaya&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/lightbox.css" />
+    <link rel="stylesheet" href="main.css" />
+
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="topnav" id="myTopnav">
+        <a href="main.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="media.html">Media</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"
+          >&#9776;</a
+        >
+      </div>
+    </header>
+    <br /><br />
+    <div class="containermain">
+      <div class="containerimg" style="text-align: center">
+        <h1>PICTURS & VIDEOS</h1>
+        <hr />
+        <div class="container center">
+          <h1>PICTURS</h1>
+        </div>
+        <hr />
+        <div class="container">
+          <a href="costum.webp" data-lightbox="imges" data-tytel="costum"
+            ><img src="costum.webp" alt=""
+          /></a>
+          <a href="./images/wall.jpg" data-lightbox="imges" data-tytel="costum"
+            ><img src="./images/wall.jpg" alt=""
+          /></a>
+          <a href="./images/woman.jpg" data-lightbox="imges" data-tytel="costum"
+            ><img src="./images/woman.jpg" alt=""
+          /></a>
+          <a href="street.webp" data-lightbox="imges" data-tytel="costum"
+            ><img src="street.webp" alt=""
+          /></a>
+          <a
+            href="./images/pichom.jpg"
+            data-lightbox="imges"
+            data-tytel="costum"
+            ><img src="./images/pichom.jpg" alt=""
+          /></a>
+          <a href="./images/track.jpg" data-lightbox="imges" data-tytel="costum"
+            ><img src="./images/track.jpg" alt=""
+          /></a>
+          <a
+            href="../Mardi Gras/images/mardi3.jpg"
+            data-lightbox="imges"
+            data-tytel="costum"
+            ><img src="../Mardi Gras/images/mardi3.jpg" alt=""
+          /></a>
+          <a
+            href="./images/karnaval.pweb.jpg"
+            data-lightbox="imges"
+            data-tytel="costum"
+            ><img src="./images/karnaval.pweb.jpg" alt=""
+          /></a>
+          <a
+            href="./images/mardi1.jpg"
+            data-lightbox="imges"
+            data-tytel="costum"
+            ><img src="./images/mardi1.jpg" alt=""
+          /></a>
+          <a
+            href="./images/mardi2.jpg"
+            data-lightbox="imges"
+            data-tytel="costum"
+            ><img src="./images/mardi2.jpg" alt=""
+          /></a>
+        </div>
+      </div>
+
+      <div class="container center" style="text-align: center; grid-row: 2/3">
+        <h1>VIDEOS</h1>
+        <hr />
+      </div>
+      <div class="videobox">
+        <div class="videos container1">
+          <video
+            src="../Mardi Gras/videos/mardi-gras-2022-mrj.mp4"
+            title="Mardi Gras 2022"
+            muted
+          ></video>
+          <video
+            src="../Mardi Gras/videos/celebrating-mardi-gras-in-new-orleans-national-geographic-mrj.mp4"
+            title="Celebrating Mardi Gras in New Orleans | National Geographic"
+            muted
+          ></video>
+          <video
+            src="../Mardi Gras/videos/what-is-mardi-gras-mardi-gras-for-kids-mrj.mp4"
+            title="What is Mardi Gras | Mardi Gras For Kids"
+            muted
+          ></video>
+          <video
+            src="../Mardi Gras/videos/new-orleans-louisiana-mardi-gras-carnaval-mrj.mp4"
+            title="New Orleans Louisiana: Mardi Gras Carnaval"
+            muted
+          ></video>
+        </div>
+        <div class="main-video">
+          <video
+            src="../Mardi Gras/videos/how-to-do-mardi-gras-like-a-new-orleans-local-where-locals-go-mrj.mp4"
+            title="How to do Mardi Gras like a New Orleans local | Where Locals Go"
+            muted
+            controls
+            autoplay
+          ></video>
+        </div>
+      </div>
+
+      <footer style="margin-top: 5px">
+        <div class="footer">
+          <p>Copyright © 2023</p>
+          <p>Built by a severely disabled student</p>
+        </div>
+      </footer>
+    </div>
+    <br />
+
+    <script src="js/lightbox-plus-jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      lightbox.option({
+        shoeImageNumberLabel: false,
+        wrapAround: true,
+      });
+      $(document).ready(function () {
+        $(".videos video").click(function () {
+          $(this).addClass("active").siblings().removeClass("active");
+
+          var src = $(this).attr("src");
+          $(".main-video video").attr("src", src);
+        });
+      });
+    </script>
+  </body>
+</html>

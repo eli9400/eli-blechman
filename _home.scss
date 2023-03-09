@@ -1,0 +1,77 @@
+main {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr) 12vh 250px, 250px, 250px, 100px;
+  grid-template-columns: repeat(4, 25vw);
+  gap: 5px;
+  box-shadow: rgb(167, 82, 170, 0.4) 0px 5px 15px;
+}
+
+article {
+  grid-row: 2/4;
+  grid-column: 1/5;
+  text-align: center;
+  padding: 5px;
+  text-justify: auto;
+  line-height: 1.5;
+  background-color: $white;
+  justify-content: center;
+  box-shadow: rgb(167, 82, 170, 0.4) 0px 5px 15px;
+  background-color: rgb(167, 82, 170, 0.4);
+}
+
+article h1 {
+  background-color: rgb(167, 82, 170, 0.4);
+  text-align: center;
+  box-shadow: rgb(167, 82, 170, 0.4) 0px 5px 15px;
+  margin-bottom: 5px;
+}
+
+section {
+  width: 100vw;
+  padding: 20px;
+  text-align: center;
+
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  margin: 5px;
+}
+.suplaished {
+  grid-column: 1/5;
+  grid-row: 3/4;
+}
+
+.suplais {
+  max-width: 100vw;
+
+  grid-column: 1/6;
+  grid-row: 4/6;
+
+  box-shadow: rgb(167, 82, 170, 0.4) 0px 5px 15px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.details {
+  display: flex;
+  flex-direction: row;
+  padding: 15px 30px;
+  margin-top: 15px;
+  border: 1px solid $green;
+  box-shadow: rgb(167, 82, 170, 0.4) 0px 20px 30px -10px;
+  background-color: $white;
+  grid-row: 6/7;
+  grid-column: 1/5;
+  text-align: center;
+  justify-content: center;
+  gap: 10px;
+}
+.box1 {
+  border-right: 2px $yellow solid;
+}
+.box2 {
+  margin-top: 90px;
+  border-left: 2px $yellow solid;
+
+  grid-column: 3/5;
+}
